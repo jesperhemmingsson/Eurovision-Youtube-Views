@@ -7,8 +7,9 @@ First things first. I really like Eurovision Song Contest. And durings the month
 - BeautifulSoup
 - Pandas
 - Progress
-2. Run load_data.py to scrape the songs into "songs.csv"
-3. Run visualize.py to see the leaderboard!
+2. You need a chromedriver in order to run Selenium. See: https://chromedriver.chromium.org/downloads
+3. Run load_data.py to scrape the songs into "songs.csv"
+4. Run visualize.py to see the leaderboard!
 
 ## TODO:
 - Add data for likes/dislikes
