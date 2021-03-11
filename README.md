@@ -9,3 +9,6 @@ First things first. I really like Eurovision Song Contest. And durings the month
 - Progress
 2. Run load_data.py to scrape the songs into "songs.csv"
 3. Run visualize.py to see the leaderboard!
+
+## TODO:
+- Add data for likes/dislikes
