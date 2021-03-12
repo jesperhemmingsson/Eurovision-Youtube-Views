@@ -7,7 +7,10 @@ def load_data(path):
 
 if __name__ == '__main__':
 
-    df = load_data("data.csv")
+    date = datetime.today().strftime('%Y-%m-%d')
+    path = "data_"+date+".csv"
+
+    df = load_data(path)
     df = df[["country", "views"]]
     df = df.sort_values("views", ascending=False).head(10)
 
@@ -15,7 +18,6 @@ if __name__ == '__main__':
 
     ax = plt.bar(df.country, df.views)
 
-    date = datetime.today().strftime('%Y-%m-%d')
 
     plt.title(f"Eurovision 2021, Youtube views per country, {date}")
 
