@@ -30,14 +30,17 @@ def scrape_info(path):
         src = driver.page_source
         html = BeautifulSoup(src, 'html.parser')
 
-        views = html.find("span", class_="view-count").text.replace(" views", "")
-        
         try:
-            views = int(views.replace(u"\xa0", ""))
-        except:
-            views = int(views.replace(",", ""))
+            views = html.find("span", class_="view-count").text.replace(" views", "")
+            
+            try:
+                views = int(views.replace(u"\xa0", ""))
+            except:
+                views = int(views.replace(",", ""))
 
-        df.loc[df.url == url, 'views'] = views
+            df.loc[df.url == url, 'views'] = views
+        except:
+            print("Could not load data for a track. See data results.")
 
         bar.next()
 

@@ -13,3 +13,4 @@ First things first. I really like Eurovision Song Contest. And durings the month
 
 ## TODO:
 - Add data for likes/dislikes
+- Make Selenium wait for page to load instead of 2 second sleep
