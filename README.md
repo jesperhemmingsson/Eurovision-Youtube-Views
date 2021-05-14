@@ -8,8 +8,9 @@ First things first. I really like Eurovision Song Contest. And durings the month
 - Pandas
 - Progress
 2. You need a chromedriver in order to run Selenium. See: https://chromedriver.chromium.org/downloads
-3. Run `python load_data.py` to scrape the songs into "songs.csv"
-4. Run `python visualize.py` to see the leaderboard!
+3. Clone repo `git clone https://github.com/HerrHemmingsson/Eurovision-Youtube-Views/`
+4. Run `python load_data.py` to scrape the songs into "songs.csv"
+5. Run `python visualize.py` to see the leaderboard!
 
 ## TODO:
 - Add data for likes/dislikes
